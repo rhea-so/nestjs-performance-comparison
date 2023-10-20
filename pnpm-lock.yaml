@@ -44,6 +44,9 @@ importers:
       graphql:
         specifier: 16.8.1
         version: 16.8.1
+      helmet:
+        specifier: 7.0.0
+        version: 7.0.0
       mysql2:
         specifier: 3.6.2
         version: 3.6.2
@@ -98,7 +101,7 @@ importers:
         version: 3.6.2
       sequelize:
         specifier: 6.33.0
-        version: 6.33.0(mariadb@3.2.2)(mysql2@3.6.2)
+        version: 6.33.0(mysql2@3.6.2)
       sequelize-typescript:
         specifier: 2.1.5
         version: 2.1.5(@types/node@20.8.7)(@types/validator@13.11.5)(reflect-metadata@0.1.13)(sequelize@6.33.0)
@@ -144,7 +147,7 @@ importers:
         version: 3.6.2
       sequelize:
         specifier: 6.33.0
-        version: 6.33.0(mariadb@3.2.2)(mysql2@3.6.2)
+        version: 6.33.0(mysql2@3.6.2)
       sequelize-typescript:
         specifier: 2.1.5
         version: 2.1.5(@types/node@20.8.7)(@types/validator@13.11.5)(reflect-metadata@0.1.13)(sequelize@6.33.0)
@@ -1449,10 +1452,6 @@ packages:
       '@types/serve-static': 1.15.4
     dev: false
 
-  /@types/geojson@7946.0.12:
-    resolution: {integrity: sha512-uK2z1ZHJyC0nQRbuovXFt4mzXDwf27vQeUWNhfKGwRcWW429GOhP8HxUHlM6TLH4bzmlv/HlEjpvJh3JfmGsAA==}
-    dev: false
-
   /@types/http-errors@2.0.3:
     resolution: {integrity: sha512-pP0P/9BnCj1OVvQR2lF41EkDG/lWWnDyA203b/4Fmi2eTyORnBtcDoKDwjWQthELrBvWkMOrvSOnZ8OVlW6tXA==}
     dev: false
@@ -1486,10 +1485,6 @@ packages:
     dependencies:
       '@types/node': 20.8.7
       form-data: 4.0.0
-    dev: false
-
-  /@types/node@17.0.45:
-    resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
     dev: false
 
   /@types/node@20.8.7:
@@ -2854,6 +2849,11 @@ packages:
     resolution: {integrity: sha512-qdSAmqLF6209RFj4VVItywPMbm3vWylknmB3nvNiUIs72xAimcM8nVYxYr7ncvZq5qzk9MKIZR8ijqD/1QuYjQ==}
     engines: {node: '>= 0.4.0'}
 
+  /helmet@7.0.0:
+    resolution: {integrity: sha512-MsIgYmdBh460ZZ8cJC81q4XJknjG567wzEmv46WOBblDb6TUd3z8/GhgmsM9pn8g2B80tAJ4m5/d3Bi1KrSUBQ==}
+    engines: {node: '>=16.0.0'}
+    dev: false
+
   /highlight.js@10.7.3:
     resolution: {integrity: sha512-tzcUFauisWKNHaRkN4Wjl/ZA07gENAjFl3J/c480dprkGTg5EQstgaNFqBfUqCq54kZRIEcreTsAgF/m2quD7A==}
     dev: false
@@ -3252,6 +3252,7 @@ packages:
   /lru-cache@10.0.1:
     resolution: {integrity: sha512-IJ4uwUTi2qCccrioU6g9g/5rvvVl13bsdczUUcqbciD9iLr095yj8DQKdObriEvuNSx325N1rV1O0sJFszx75g==}
     engines: {node: 14 || >=16.14}
+    dev: true
 
   /lru-cache@6.0.0:
     resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
@@ -3287,17 +3288,6 @@ packages:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
-
-  /mariadb@3.2.2:
-    resolution: {integrity: sha512-9ClJCFsLcK7WnPXVxuKGd7p0CBvNch3i5nwAf1HEqERj7RV60DG/0dJu4DfO33gpYQd9Cr4jq17O76/2VjSbkg==}
-    engines: {node: '>= 12'}
-    dependencies:
-      '@types/geojson': 7946.0.12
-      '@types/node': 17.0.45
-      denque: 2.1.0
-      iconv-lite: 0.6.3
-      lru-cache: 10.0.1
-    dev: false
 
   /media-typer@0.3.0:
     resolution: {integrity: sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==}
@@ -4087,61 +4077,6 @@ packages:
       glob: 7.2.0
       reflect-metadata: 0.1.13
       sequelize: 6.33.0(mysql2@3.6.2)
-    dev: false
-
-  /sequelize@6.33.0(mariadb@3.2.2)(mysql2@3.6.2):
-    resolution: {integrity: sha512-GkeCbqgaIcpyZ1EyXrDNIwktbfMldHAGOVXHGM4x8bxGSRAOql5htDWofPvwpfL/FoZ59CaFmfO3Mosv1lDbQw==}
-    engines: {node: '>=10.0.0'}
-    peerDependencies:
-      ibm_db: '*'
-      mariadb: '*'
-      mysql2: '*'
-      oracledb: '*'
-      pg: '*'
-      pg-hstore: '*'
-      snowflake-sdk: '*'
-      sqlite3: '*'
-      tedious: '*'
-    peerDependenciesMeta:
-      ibm_db:
-        optional: true
-      mariadb:
-        optional: true
-      mysql2:
-        optional: true
-      oracledb:
-        optional: true
-      pg:
-        optional: true
-      pg-hstore:
-        optional: true
-      snowflake-sdk:
-        optional: true
-      sqlite3:
-        optional: true
-      tedious:
-        optional: true
-    dependencies:
-      '@types/debug': 4.1.10
-      '@types/validator': 13.11.5
-      debug: 4.3.4
-      dottie: 2.0.6
-      inflection: 1.13.4
-      lodash: 4.17.21
-      mariadb: 3.2.2
-      moment: 2.29.4
-      moment-timezone: 0.5.43
-      mysql2: 3.6.2
-      pg-connection-string: 2.6.2
-      retry-as-promised: 7.0.4
-      semver: 7.5.4
-      sequelize-pool: 7.1.0
-      toposort-class: 1.0.1
-      uuid: 8.3.2
-      validator: 13.11.0
-      wkx: 0.5.0
-    transitivePeerDependencies:
-      - supports-color
     dev: false
 
   /sequelize@6.33.0(mysql2@3.6.2):

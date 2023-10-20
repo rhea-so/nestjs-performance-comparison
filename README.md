@@ -12,3 +12,10 @@ chmod +x ./bombardier-darwin-arm64
 sudo mv ./bombardier-darwin-arm64 /usr/local/bin/bombardier
 # Terminal Restart
 ```
+
+## Environment
+
+- Model: MacBook Air M1, 2020
+  - CPU: Apple M1
+  - Memory: 16GB
+  - OS: Ventura 13.4.1
