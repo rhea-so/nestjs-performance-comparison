@@ -1,0 +1,1 @@
+bombardier -c 125 -n 100000 -m POST -H 'Content-Type: application/json' -b '{ "operationName": null, "variables": {}, "query": "mutation { createBlog(input: {title: \"test title\", content: \"test content\"}) { title, content  } }" }' http://localhost:3000/graphql

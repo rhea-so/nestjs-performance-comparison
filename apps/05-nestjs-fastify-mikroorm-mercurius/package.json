@@ -1,0 +1,23 @@
+{
+  "name": "@apps/05-nestjs-fastify-mikroorm-mercurius",
+  "scripts": {
+    "build": "nest build",
+    "dev": "nest start --watch"
+  },
+  "dependencies": {
+    "@libs/config": "*",
+    "@mikro-orm/core": "5.8.10",
+    "@mikro-orm/mysql": "5.8.10",
+    "@mikro-orm/nestjs": "5.2.2",
+    "@nestjs/common": "10.2.7",
+    "@nestjs/core": "10.2.7",
+    "@nestjs/graphql": "12.0.9",
+    "@nestjs/mercurius": "12.0.9",
+    "@nestjs/platform-fastify": "10.2.7",
+    "graphql": "16.8.1",
+    "mercurius": "13.1.0"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "10.1.18"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@apps/01-nestjs-express-sequelize-apollo",
+  "scripts": {
+    "build": "nest build",
+    "dev": "nest start --watch"
+  },
+  "dependencies": {
+    "@apollo/server": "4.9.4",
+    "@apollo/subgraph": "2.5.6",
+    "@libs/config": "*",
+    "@nestjs/apollo": "12.0.9",
+    "@nestjs/common": "10.2.7",
+    "@nestjs/core": "10.2.7",
+    "@nestjs/graphql": "12.0.9",
+    "@nestjs/platform-express": "10.2.7",
+    "@nestjs/sequelize": "10.0.0",
+    "graphql": "16.8.1",
+    "mysql2": "3.6.2",
+    "sequelize": "6.33.0",
+    "sequelize-typescript": "2.1.5"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "10.1.18",
+    "@types/sequelize": "4.28.17"
+  }
+}

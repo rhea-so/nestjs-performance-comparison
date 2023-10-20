@@ -1,0 +1,10 @@
+{
+  "extends": "@libs/config/typescript/backend.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist",
+    "paths": { "@src/*": ["src/*"] }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["**/*.spec.ts"]
+}

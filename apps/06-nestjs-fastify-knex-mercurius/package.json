@@ -1,0 +1,22 @@
+{
+  "name": "@apps/06-nestjs-fastify-knex-mercurius",
+  "scripts": {
+    "build": "nest build",
+    "dev": "nest start --watch"
+  },
+  "dependencies": {
+    "@libs/config": "*",
+    "@nestjs/common": "10.2.7",
+    "@nestjs/core": "10.2.7",
+    "@nestjs/graphql": "12.0.9",
+    "@nestjs/mercurius": "12.0.9",
+    "@nestjs/platform-fastify": "10.2.7",
+    "graphql": "16.8.1",
+    "knex": "3.0.1",
+    "mercurius": "13.1.0",
+    "mysql2": "3.6.2"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "10.1.18"
+  }
+}
