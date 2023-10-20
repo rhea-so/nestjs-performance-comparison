@@ -40,9 +40,10 @@ query {
 }
 ```
 
-![query-test-result-1](https://github.com/rhea-so/nestjs-performance-comparison/assets/25793226/ca9185fc-9083-4080-9fd7-023ba39d4fc7)
+![query-test-result-1](https://github.com/rhea-so/nestjs-performance-comparison/assets/25793226/5e1a96eb-0717-41db-84da-fd75dfb30dcc)
 
-![query-test-result-2](https://github.com/rhea-so/nestjs-performance-comparison/assets/25793226/082ce9d4-c109-4c14-822c-2309c0dbec95)
+![query-test-result-2](https://github.com/rhea-so/nestjs-performance-comparison/assets/25793226/bbd7d19f-ea70-4b5a-b7a6-afbbef615b99)
+
 
 #### 01-nestjs-express-sequelize-apollo
 
@@ -130,9 +131,9 @@ Statistics        Avg      Stdev        Max
 
 ### Mutation
 
-![mutation-test-result-1](https://github.com/rhea-so/nestjs-performance-comparison/assets/25793226/12a43a34-2e63-4913-97bc-0ae60972c8bb)
+![mutation-test-result-1](https://github.com/rhea-so/nestjs-performance-comparison/assets/25793226/795fd141-6d8b-415a-a77f-b2260e82912f)
 
-![mutation-test-result-2](https://github.com/rhea-so/nestjs-performance-comparison/assets/25793226/11b2bd92-a772-4a5f-873d-f5598383548e)
+![mutation-test-result-2](https://github.com/rhea-so/nestjs-performance-comparison/assets/25793226/af12886a-2404-41ab-bce3-2a8fa010f002)
 
 ```graphql
 mutation {
