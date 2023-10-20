@@ -44,7 +44,6 @@ query {
 
 ![query-test-result-2](https://github.com/rhea-so/nestjs-performance-comparison/assets/25793226/bbd7d19f-ea70-4b5a-b7a6-afbbef615b99)
 
-
 #### 01-nestjs-express-sequelize-apollo
 
 ```
@@ -227,3 +226,17 @@ Statistics        Avg      Stdev        Max
     others - 0
   Throughput:     7.92MB/s
 ```
+
+## Conclusion
+
+If you want to develop for optimization rather than speed, the combination of `fastify` + `knex` + `mercurius` is a good choice.
+
+Conversely, if you want to focus on speed of development over optimization, you can use the combination of `fastify` + `sequelize` + `mercurius` or `fastify` + `typeorm` + `mercurius`.
+
+> 1. `express` vs `fastify` → `fastify` win! 🎉
+> 2. `apollo` vs `mercurius` → `mercurius` win! 🎉
+> 3. (Query) `sequelize` vs `typeorm` vs `mikroorm` → `typeorm` win! 🎉
+> 4. (Command) `sequelize` vs `typeorm` vs `mikroorm` → `sequelize` win! 🎉
+> 5. `orm` vs `query builder`→ `knex` win! 🎉
+
+If you use a query builder instead of an ORM to write code that is not dependent on a specific ORM, I highly recommend using knex because it is easier to maintain and performs better, although it will take more time to develop.
