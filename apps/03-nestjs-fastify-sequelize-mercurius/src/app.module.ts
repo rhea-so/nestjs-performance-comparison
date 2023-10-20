@@ -21,6 +21,7 @@ import {
       autoLoadModels: true,
       synchronize: true,
       logging: false,
+      pool: { min: 5, max: 100 },
     }),
     GraphQLModule.forRoot<MercuriusFederationDriverConfig>({
       driver: MercuriusFederationDriver,

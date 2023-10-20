@@ -18,6 +18,7 @@ import { BlogModule } from "./blog/blog.module";
       autoLoadModels: true,
       synchronize: true,
       logging: false,
+      pool: { min: 5, max: 100 },
     }),
     GraphQLModule.forRoot({
       driver: ApolloFederationDriver,

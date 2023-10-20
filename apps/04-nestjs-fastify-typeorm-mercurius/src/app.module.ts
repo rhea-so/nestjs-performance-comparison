@@ -20,6 +20,7 @@ import { TypeOrmModule } from "@nestjs/typeorm";
       entities: [Blog],
       synchronize: true,
       logging: false,
+      poolSize: 100,
     }),
     GraphQLModule.forRoot<MercuriusFederationDriverConfig>({
       driver: MercuriusFederationDriver,

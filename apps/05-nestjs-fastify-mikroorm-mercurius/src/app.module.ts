@@ -18,6 +18,7 @@ import { MikroOrmModule } from "@mikro-orm/nestjs";
       password: "123qwe",
       dbName: "performance-test",
       entities: [Blog],
+      pool: { min: 5, max: 100 },
     }),
     GraphQLModule.forRoot<MercuriusFederationDriverConfig>({
       driver: MercuriusFederationDriver,
