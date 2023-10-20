@@ -1,0 +1,21 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Blog {
+  title: String!
+  content: String!
+}
+
+type Query {
+  blogs(count: Int!): [Blog!]!
+}
+
+type Mutation {
+  createBlog(input: CreateBlogInput!): Blog!
+}
+
+input CreateBlogInput {
+  title: String!
+  content: String!
+}
