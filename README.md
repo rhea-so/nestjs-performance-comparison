@@ -15,10 +15,17 @@ sudo mv ./bombardier-darwin-arm64 /usr/local/bin/bombardier
 
 ## Environment
 
-- Model: MacBook Air M1, 2020
+### Machine
+
+- MacBook Air M1, 2020
   - CPU: Apple M1
   - Memory: 16GB
   - OS: Ventura 13.4.1
+
+### Tech Stack
+
+- Node.js 18.18.2
+- MariaDB 10.11.5
 
 ## Test Result
 
@@ -36,7 +43,6 @@ query {
 ![query-test-result-1](https://github.com/rhea-so/nestjs-performance-comparison/assets/25793226/ca9185fc-9083-4080-9fd7-023ba39d4fc7)
 
 ![query-test-result-2](https://github.com/rhea-so/nestjs-performance-comparison/assets/25793226/082ce9d4-c109-4c14-822c-2309c0dbec95)
-
 
 #### 01-nestjs-express-sequelize-apollo
 
